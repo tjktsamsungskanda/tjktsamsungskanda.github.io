@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
+
 *, html {
     margin: 0;
     padding: 0;
@@ -81,13 +82,28 @@ nav {
     position: sticky;
     top: 0;
 
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 
     background: #00000075;
 
     color: #ffffff;
 
     font-family: "Poppins", serif;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: floatIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0s;
+}
+
+nav h1 {
+    text-shadow: none;
+    transition: all 0.3s ease 0s;
+
+    font-family: "Playfair display", sans;
+}
+nav h1:hover {
+    text-shadow: 0 1px 10px #ffffffea;
 }
 
 nav ul {
@@ -101,18 +117,63 @@ nav ul {
     font-weight: 700;
 }
 
-nav ul li a {
+nav ul li {
     color: #ffffff;
-    transition: all 0.3s ease 0s;
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
 }
-nav ul li a:hover {
-    color: #007a1a;
+nav ul li:hover {
+    transform: scale(1.1) translateY(-1px);
+    text-shadow: 0 0 10px rgba(255,255,255,0.35),
+               0 0 20px rgba(255,255,255,0.25);
 }
+
+nav ul li a {
+    color: white;
+}
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
 
 main {
     padding: 0 20px;
     text-align: center;
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.2s;
 }
+
+
+.welcomeMessage {
+    transition: all 0.4s ease 0s;
+    margin: 0 33%;
+}
+.welcomeMessage:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+
 
 footer {
     background: #000000;
@@ -127,6 +188,13 @@ footer {
     justify-content: space-between;
 
     font-family: "Poppins", serif;
+
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.4s;
 }
 
 footer ul {
@@ -143,6 +211,17 @@ footer ul li a img {
 footer ul li a img:hover {
     scale: 1.4;
 }
+
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 
 @keyframes hero-gradient-animation {
     0% {
