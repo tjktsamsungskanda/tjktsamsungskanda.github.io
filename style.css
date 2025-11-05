@@ -82,9 +82,13 @@ nav {
     position: sticky;
     top: 0;
 
+    z-index: 10;
+
     padding: 0.5rem 1rem;
 
-    background: #00000075;
+    background: #0000008b;
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(3px); 
 
     color: #ffffff;
 
@@ -100,7 +104,7 @@ nav h1 {
     text-shadow: none;
     transition: all 0.3s ease 0s;
 
-    font-family: "Playfair display", sans;
+    font-family: "Playfair display", serif;
 }
 nav h1:hover {
     text-shadow: 0 1px 10px #ffffffea;
@@ -167,6 +171,10 @@ main {
     animation-delay: 0.2s;
 }
 
+.loremIpsum {
+    font-family: "Space Grotesk", serif;
+    text-align: left;
+}
 
 .welcomeMessage {
     transition: all 0.4s ease 0s;
@@ -243,12 +251,45 @@ footer ul li a img:hover {
 }
 
 @media screen and (max-width: 480px) {
+
+    nav {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+    }
+
     nav h1 {
         font-size: 20px;
     }
 
-    nav ul li {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+
+
+        font-size: 15px;
+        font-weight: 500;
+        gap: 0.1rem;
+
+        margin-top: 15px;
+    }
+
+    nav ul.hidden {
         display: none;
+    }
+
+    nav ul li:hover {
+        transform: translateX(-4px);
+        text-shadow: 4px 0 10px rgba(255, 255, 255, 0.455);
+    }
+
+    nav ul li a::after {
+    }
+
+    nav ul li a:hover::after {
+        width: 0;
     }
 
     .burgerIcon {
@@ -259,6 +300,10 @@ footer ul li a img:hover {
     }
     .burgerIcon:hover {
         cursor: pointer;
+    }
+
+    main {
+        margin-top: 4rem;
     }
 
     footer {
