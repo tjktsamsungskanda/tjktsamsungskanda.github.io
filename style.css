@@ -415,6 +415,9 @@ footer ul li a img:hover {
     .carousel {
         margin: 100px auto;
     }
+    .animate-on-scroll {
+        animation: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
