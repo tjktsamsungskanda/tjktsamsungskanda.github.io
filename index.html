@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TJKT SAMSUNG</title>
 
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -62,7 +65,19 @@
             <a href="/gallery/index.html" class="more" id="more" target="_blank">more</a>
         </div>
         <div class="trdpage animate-on-scroll" id="trdpage">
-            <p>coming soon</p>
+            <p>struktur kelas<br>soon</p>
+        </div>
+        <div class="fourthpage" id="fourthpage">
+            <div class="menfess">
+                <h1>MENFESS XI TJKT SAMSUNG</h1>
+                <div class="containMenfess">
+                    <div id="feedMenfess"></div>
+                </div>
+
+                <input type="text" class="inputMenfess" id="content" placeholder="Sampaikan isi hatimu disini!">
+                <img src="/icon/send.webp" class="sendMenfessicon" onclick="submitPost()">
+                <p>semua menfess akan bersifat anonym dan terjaga kerahasiaannya</p>
+            </div>
         </div>
     </main>
 

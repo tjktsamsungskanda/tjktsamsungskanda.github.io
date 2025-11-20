@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 *, html {
     margin: 0;
@@ -206,7 +206,7 @@ main {
   
   /* transform: translateX(-20px); */
 
-  filter: blur(0px) opacity(10%) saturate(0%);
+  filter: blur(0px) opacity(16%) saturate(0%);
 
   -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
@@ -230,8 +230,9 @@ main {
     cursor: none;
 }
 .welcomeMessage h1 {
-    font-weight: 200;
-    font-size: 70px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
 }
 .welcomeMessage p {
     font-family: "Raleway", sans-serif;
@@ -339,8 +340,159 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
+.fourthpage {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    backdrop-filter: blur(4px);
+    min-height: 100dvh;
+
+    margin: 3% 0;
+}
+
+.menfess {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
+    height: 100dvh;
+
+    padding: 5%;
+    margin: 3% 0;
+
+    gap: 1em;
+
+    border-radius: 20px;
+    border: .1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menfess p {
+    display: none;
+}
+
+.menfess h1 {
+    text-align: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.inputMenfess {
+    position: relative;
+
+    background-color: transparent;
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+
+    padding: 2% 3.2%;
+
+    transition: all 0.3s ease 0s;
+}
+.inputMenfess::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.inputMenfess:focus {
+    outline: none;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+
+    box-shadow: 0 0 10px rgb(0, 0, 255),
+    0 0 5px rgb(0, 0, 150),
+    inset 0 0 10px rgb(0, 0, 255),
+    inset 0 0 5px rgb(0, 0, 150);
+
+}
+
+.sendMenfessicon {
+    position: absolute;
+    transform: translate(-100px, 533px);
+    right: 0;
+
+    width: 40px;
+
+    filter: invert(100%);
+
+    transition: all 0.3s ease 0s;
+}
+.sendMenfessicon:hover {
+    cursor: pointer;
+}
+.sendMenfessicon:active {
+    width: 45px;
+}
+
+.containMenfess {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    max-height: 65dvh;
+
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 120px);
+    mask-image: linear-gradient(to bottom, transparent, black 120px);
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    font-family: "Castoro Titling", sans-serif;
+}
+
+.containMenfess::-webkit-scrollbar {
+    display: none;
+}
+
+.post-itemMenfess {
+    color: white;
+    display: flex;
+    flex-direction: column;  /* ⬅️ TAMBAH INI */
+    padding: 15px 30px;
+    gap: 8px;  /* ⬅️ KECILKAN GAP */
+    border-top: .5px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.post-itemMenfess:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.post-itemMenfess .content {
+    flex: 1;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.6;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+.post-itemMenfess .date {
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: right;
+}
+
+.date-full {
+    display: inline;
+}
+
+.date-short {
+    display: none;
+}
 
 footer {
     margin-top: auto;
@@ -531,6 +683,56 @@ footer ul li a img:hover {
 
     .group {
         padding-right: 3.5em;
+    }
+
+    .menfess {
+        min-height: 80dvh;
+    }
+
+    .menfess p {
+        display: flex;
+        color: rgba(255, 255, 255, 0.2);
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    .menfess h1 {
+        font-size: 30px;
+    }
+    .sendMenfessicon {
+        transform: translate(-35px, 576px);
+        width: 24px;
+    }
+    .inputMenfess::placeholder {
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 8px;
+    }
+
+    .post-itemMenfess {
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px 20px;
+    }
+    
+    .post-itemMenfess .content {
+        max-width: 100%;
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .post-itemMenfess .date {
+        text-align: left;
+        font-size: 11px;
+        opacity: 0.7;
+    }
+
+    .date-full {
+        display: none;
+    }
+    
+    .date-short {
+        display: inline;
     }
 
     footer {
