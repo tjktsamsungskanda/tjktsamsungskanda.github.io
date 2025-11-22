@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TJKT SAMSUNG</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
@@ -21,7 +22,7 @@
         <ul id="menu-list" class="hidden">
             <li><a href="#home">HOME</a></li>
             <li><a href="#secpage">GALLERY</a></li>
-            <li><a href="#footer">ABOUT</a></li>
+            <li><a href="#fourthpage">MENFESS</a></li>
         </ul>
     </nav>
 
@@ -34,9 +35,9 @@
         </div>
         <div class="secpage" id="secpage">
             <div class="title">
-                <h1 class="animate-on-scroll">Our Best <span class="spanmemories animate-on-scroll">Memories<img src="/icon/sparkling.webp"></h1>
+                <h1>Our Best <span class="spanmemories">Memories<img src="/icon/sparkling.webp"></h1>
             </div>
-            <div class="carousel animate-on-scroll">
+            <div class="carousel">
                 <div class="group">
                     <img src="/gallery/photos/1.jpg" alt="img">
                     <img src="/gallery/photos/3.jpg" alt="img">
@@ -64,12 +65,12 @@
             </div>
             <a href="/gallery/index.html" class="more" id="more" target="_blank">more</a>
         </div>
-        <div class="trdpage animate-on-scroll" id="trdpage">
+        <div class="trdpage" id="trdpage">
             <p>struktur kelas<br>soon</p>
         </div>
         <div class="fourthpage" id="fourthpage">
             <div class="menfess">
-                <h1>MENFESS XI TJKT SAMSUNG</h1>
+                <h1>Menfess<span> TJKT SAMSUNG </span></h1>
                 <div class="containMenfess">
                     <div id="feedMenfess"></div>
                 </div>
@@ -92,8 +93,12 @@
         </ul>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-    
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -10,31 +10,6 @@ burgerIcon.addEventListener("click", () => {
     navList.classList.toggle("hidden");
 })
 
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-        }
-    });
-}, observerOptions);
-
-const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
-elementsToAnimate.forEach(el => {
-    observer.observe(el);
-});
-
-
-
-
-
-
-
-
 const firebaseConfig = {
       apiKey: "AIzaSyB8g-WBPVNP-QmhS_5GeBjjEShVy6kizHE",
       authDomain: "menfess-xi-tjkt-samsung.firebaseapp.com",
