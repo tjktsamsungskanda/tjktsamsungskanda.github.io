@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="${student.photo}" 
                          alt="${student.name}" 
                          class="struktur-carousel-image" 
-                         onerror="this.src='https://i.pravatar.cc/150?img=${student.number}'">
+                         onerror="this.src='/assets/photos/avatar/default.svg'">
                     <div class="struktur-carousel-name">${student.name}</div>
                 `;
                 carouselTrack.appendChild(card);
