@@ -480,6 +480,8 @@ main {
     user-select: none;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .struktur-carousel-wrapper::-webkit-scrollbar {
@@ -488,6 +490,7 @@ main {
 
 .struktur-carousel-wrapper:active {
     cursor: grabbing;
+    scroll-behavior: auto;
 }
 
 .struktur-carousel-track {

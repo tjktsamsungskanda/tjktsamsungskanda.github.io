@@ -21,53 +21,55 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!carouselTrack || !carouselWrapper) return;
 
         const students = [
-            { name: "Agha", number: 1, photo: "assets/photos/agha.JPG" },
-            { name: "Bintang", number: 2, photo: "assets/photos/bintang.JPG" },
-            { name: "Celsy W", number: 3, photo: "assets/photos/celsyw.JPG" },
-            { name: "Chelsi T", number: 4, photo: "assets/photos/celsit.JPG" },
-            { name: "Daffa A", number: 5, photo: "assets/photos/dafaa.JPG" },
-            { name: "Erfin", number: 6, photo: "assets/photos/erpin.JPG" },
-            { name: "Fahri", number: 7, photo: "assets/photos/fahri.JPG" },
-            { name: "Faiza", number: 8, photo: "assets/photos/faiza.JPG" },
-            { name: "Habib", number: 9, photo: "assets/photos/habib.JPG" },
-            { name: "Hadi", number: 10, photo: "assets/photos/hadi.JPG" },
-            { name: "Hafizh", number: 11, photo: "assets/photos/hafizh.JPG" },
-            { name: "Kayla", number: 12, photo: "assets/photos/kayla.JPG" },
-            { name: "Ridho", number: 13, photo: "assets/photos/ridho.JPG" },
-            { name: "Restu", number: 14, photo: "assets/photos/restu.JPG" },
-            { name: "Fahrel", number: 15, photo: "assets/photos/fahreli.JPG" },
-            { name: "Afgan", number: 16, photo: "assets/photos/afgan.JPG" },
-            { name: "Daffa S", number: 17, photo: "assets/photos/daffas.JPG" },
-            { name: "Fharel", number: 18, photo: "assets/photos/fharel.JPG" },
-            { name: "Fitrah", number: 19, photo: "assets/photos/fitrah.JPG" },
-            { name: "Hafidh", number: 20, photo: "assets/photos/hafidh.JPG" },
-            { name: "Fikri", number: 21, photo: "assets/photos/fikri.JPG" },
-            { name: "Raffa", number: 22, photo: "assets/photos/raffa.JPG" },
-            { name: "Rehan", number: 23, photo: "assets/photos/rehan.JPG" },
-            { name: "Naufal", number: 24, photo: "assets/photos/naufal.JPG" },
-            { name: "Nikei", number: 25, photo: "assets/photos/nikei.JPG" },
-            { name: "Nur", number: 26, photo: "assets/photos/nur.JPG" },
-            { name: "Pandu", number: 27, photo: "assets/photos/pandu.JPG" },
-            { name: "Rakha M", number: 28, photo: "assets/photos/rakham.JPG" },
-            { name: "Rakha P", number: 29, photo: "assets/photos/rakhap.JPG" },
-            { name: "Rezky", number: 30, photo: "assets/photos/rezky.JPG" },
-            { name: "Samuel", number: 31, photo: "assets/photos/samuel.JPG" },
-            { name: "Syaira", number: 32, photo: "assets/photos/syaira.JPG" },
-            { name: "Malik", number: 33, photo: "assets/photos/malik.JPG" }
+            { name: "Agha", number: 1, photo: "assets/photos/webp/agha.webp" },
+            { name: "Bintang", number: 2, photo: "assets/photos/webp/bintang.webp" },
+            { name: "Celsy W", number: 3, photo: "assets/photos/webp/celsyw.webp" },
+            { name: "Chelsi T", number: 4, photo: "assets/photos/webp/celsit.webp" },
+            { name: "Daffa A", number: 5, photo: "assets/photos/webp/dafaa.webp" },
+            { name: "Erfin", number: 6, photo: "assets/photos/webp/erpin.webp" },
+            { name: "Fahri", number: 7, photo: "assets/photos/webp/fahri.webp" },
+            { name: "Faiza", number: 8, photo: "assets/photos/webp/faiza.webp" },
+            { name: "Habib", number: 9, photo: "assets/photos/webp/habib.webp" },
+            { name: "Hadi", number: 10, photo: "assets/photos/webp/hadi.webp" },
+            { name: "Hafizh", number: 11, photo: "assets/photos/webp/hafizh.webp" },
+            { name: "Kayla", number: 12, photo: "assets/photos/webp/kayla.webp" },
+            { name: "Ridho", number: 13, photo: "assets/photos/webp/ridho.webp" },
+            { name: "Restu", number: 14, photo: "assets/photos/webp/restu.webp" },
+            { name: "Fahrel", number: 15, photo: "assets/photos/webp/fahreli.webp" },
+            { name: "Afgan", number: 16, photo: "assets/photos/webp/afgan.webp" },
+            { name: "Daffa S", number: 17, photo: "assets/photos/webp/daffas.webp" },
+            { name: "Fharel", number: 18, photo: "assets/photos/webp/fharel.webp" },
+            { name: "Fitrah", number: 19, photo: "assets/photos/webp/fitrah.webp" },
+            { name: "Hafidh", number: 20, photo: "assets/photos/hafidh.jpg" },
+            { name: "Fikri", number: 21, photo: "assets/photos/webp/fikri.webp" },
+            { name: "Raffa", number: 22, photo: "assets/photos/webp/raffa.webp" },
+            { name: "Rehan", number: 23, photo: "assets/photos/webp/rehan.webp" },
+            { name: "Naufal", number: 24, photo: "assets/photos/webp/naufal.webp" },
+            { name: "Nikei", number: 25, photo: "assets/photos/webp/nikei.webp" },
+            { name: "Nur", number: 26, photo: "assets/photos/webp/nur.webp" },
+            { name: "Pandu", number: 27, photo: "assets/photos/webp/pandu.webp" },
+            { name: "Rakha M", number: 28, photo: "assets/photos/webp/rakham.webp" },
+            { name: "Rakha P", number: 29, photo: "assets/photos/webp/rakhap.webp" },
+            { name: "Rezky", number: 30, photo: "assets/photos/webp/rezky.webp" },
+            { name: "Samuel", number: 31, photo: "assets/photos/webp/samuel.webp" },
+            { name: "Syaira", number: 32, photo: "assets/photos/webp/syaira.webp" },
+            { name: "Malik", number: 33, photo: "assets/photos/webp/malik.webp" }
         ];
 
         function generateCarouselCards() {
-            carouselTrack.innerHTML = '';
-            
+        carouselTrack.innerHTML = '';
+        
             students.forEach(student => {
                 const card = document.createElement('div');
                 card.className = 'struktur-carousel-card';
                 card.innerHTML = `
-                    <img src="${student.photo}" 
-                         alt="${student.name}" 
-                         class="struktur-carousel-image" 
-                         onerror="this.src='/assets/photos/avatar/default.svg'">
-                    <div class="struktur-carousel-name">${student.name}</div>
+                <img 
+                    src="${student.photo}" 
+                    alt="${student.name}" 
+                    class="struktur-carousel-image"
+                    loading="lazy"
+                    onerror="this.src='/assets/photos/avatar/default.svg'">
+                <div class="struktur-carousel-name">${student.name}</div>
                 `;
                 carouselTrack.appendChild(card);
             });
@@ -76,47 +78,140 @@ document.addEventListener('DOMContentLoaded', function() {
         let isDown = false;
         let startX;
         let scrollLeft;
+        let velocity = 0;
+        let lastX = 0;
+        let lastTime = Date.now();
 
         carouselWrapper.addEventListener('mousedown', (e) => {
             isDown = true;
             carouselWrapper.style.cursor = 'grabbing';
+            carouselWrapper.style.scrollBehavior = 'auto';
+            
             startX = e.pageX - carouselWrapper.offsetLeft;
             scrollLeft = carouselWrapper.scrollLeft;
+            lastX = e.pageX;
+            lastTime = Date.now();
+            velocity = 0;
         });
 
         carouselWrapper.addEventListener('mouseleave', () => {
-            isDown = false;
-            carouselWrapper.style.cursor = 'grab';
+            if (isDown) {
+                isDown = false;
+                carouselWrapper.style.cursor = 'grab';
+                applyMomentum();
+            }
         });
 
         carouselWrapper.addEventListener('mouseup', () => {
-            isDown = false;
-            carouselWrapper.style.cursor = 'grab';
+            if (isDown) {
+                isDown = false;
+                carouselWrapper.style.cursor = 'grab';
+                applyMomentum();
+            }
         });
 
         carouselWrapper.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
+            
             const x = e.pageX - carouselWrapper.offsetLeft;
-            const walk = (x - startX) * 2;
+            const currentTime = Date.now();
+            const deltaTime = currentTime - lastTime;
+            
+            const walk = (x - startX) * 1.2;
             carouselWrapper.scrollLeft = scrollLeft - walk;
+            
+            if (deltaTime > 0) {
+                velocity = (e.pageX - lastX) / deltaTime;
+            }
+            
+            lastX = e.pageX;
+            lastTime = currentTime;
         });
 
         let touchStartX = 0;
         let touchScrollLeft = 0;
+        let touchVelocity = 0;
+        let lastTouchX = 0;
+        let lastTouchTime = Date.now();
 
         carouselWrapper.addEventListener('touchstart', (e) => {
+            carouselWrapper.style.scrollBehavior = 'auto';
             touchStartX = e.touches[0].pageX;
             touchScrollLeft = carouselWrapper.scrollLeft;
+            lastTouchX = e.touches[0].pageX;
+            lastTouchTime = Date.now();
+            touchVelocity = 0;
         });
 
         carouselWrapper.addEventListener('touchmove', (e) => {
             const touchX = e.touches[0].pageX;
-            const walk = (touchStartX - touchX) * 1.5;
+            const currentTime = Date.now();
+            const deltaTime = currentTime - lastTouchTime;
+            
+            const walk = (touchStartX - touchX) * 1.1;
             carouselWrapper.scrollLeft = touchScrollLeft + walk;
+            
+            if (deltaTime > 0) {
+                touchVelocity = (lastTouchX - touchX) / deltaTime;
+            }
+            
+            lastTouchX = touchX;
+            lastTouchTime = currentTime;
         });
 
+        carouselWrapper.addEventListener('touchend', () => {
+            applyTouchMomentum();
+        });
+
+        function applyMomentum() {
+            if (Math.abs(velocity) < 0.1) return;
+            
+            carouselWrapper.style.scrollBehavior = 'auto';
+            
+            const friction = 0.95;
+            let currentVelocity = velocity * 20;
+            
+            function momentumStep() {
+                if (Math.abs(currentVelocity) < 0.5) {
+                    carouselWrapper.style.scrollBehavior = 'smooth';
+                    return;
+                }
+                
+                carouselWrapper.scrollLeft -= currentVelocity;
+                currentVelocity *= friction;
+                
+                requestAnimationFrame(momentumStep);
+            }
+            
+            requestAnimationFrame(momentumStep);
+        }
+
+        function applyTouchMomentum() {
+            if (Math.abs(touchVelocity) < 0.1) return;
+            
+            carouselWrapper.style.scrollBehavior = 'auto';
+            
+            const friction = 0.95;
+            let currentVelocity = touchVelocity * 20;
+            
+            function momentumStep() {
+                if (Math.abs(currentVelocity) < 0.5) {
+                    carouselWrapper.style.scrollBehavior = 'smooth';
+                    return;
+                }
+                
+                carouselWrapper.scrollLeft += currentVelocity;
+                currentVelocity *= friction;
+                
+                requestAnimationFrame(momentumStep);
+            }
+            
+            requestAnimationFrame(momentumStep);
+        }
+
         generateCarouselCards();
+        carouselWrapper.style.scrollBehavior = 'smooth';
     })();
 
     const firebaseConfig = {
