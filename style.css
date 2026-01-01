@@ -201,7 +201,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('/gallery/photos/1.jpg') center/cover no-repeat;
+  background: url('/gallery/photos/1.webp') center/cover no-repeat;
   z-index: -1;
   
   
