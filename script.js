@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Daffa S", number: 17, photo: "assets/photos/webp/daffas.webp" },
             { name: "Fharel", number: 18, photo: "assets/photos/webp/fharel.webp" },
             { name: "Fitrah", number: 19, photo: "assets/photos/webp/fitrah.webp" },
-            { name: "Hafidh", number: 20, photo: "assets/photos/hafidh.jpg" },
+            { name: "Hafidh", number: 20, photo: "assets/photos/hafidh.JPG" },
             { name: "Fikri", number: 21, photo: "assets/photos/webp/fikri.webp" },
             { name: "Raffa", number: 22, photo: "assets/photos/webp/raffa.webp" },
             { name: "Rehan", number: 23, photo: "assets/photos/webp/rehan.webp" },
