@@ -1,166 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TJKT SAMSUNG</title>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maintenance</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <h1>
-            XI TJKT SAMSUNG
-        </h1>
-        <img src="/icon/menu-burger.webp" id="burgerIcon" class="burgerIcon">
-        <ul id="menu-list" class="hidden">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#secpage">GALLERY</a></li>
-            <li><a href="#fourthpage">MENFESS</a></li>
-        </ul>
-    </nav>
+<div class="container">
+    <h1>TJKT SAMSUNG SKANDA</h1>
+    <h3>is Under <span>Construction</span></h3>
+</div>
 
-    <main id="home">
-        <div class="firstpage" id="firstpage">
-            <div class="welcomeMessage">
-                <h1>Selamat datang di Web kelas kami</h1>
-                <p>XI TJKT SAMSUNG</p>
-            </div>
-        </div>
-        <div class="secpage" id="secpage">
-            <div class="title">
-                <h1>Our Best <span class="spanmemories">Memories<img src="/icon/sparkling.webp"></h1>
-            </div>
-            <div class="carousel">
-                <div class="group">
-                    <img src="/gallery/photos/1.webp" alt="img">
-                    <img src="/gallery/photos/3.webp" alt="img">
-                    <img src="/gallery/photos/30.webp" alt="img">
-                    <img src="/gallery/photos/5.webp" alt="img">
-                    <img src="/gallery/photos/7.webp" alt="img">
-                    <img src="/gallery/photos/11.webp" alt="img">
-                    <img src="/gallery/photos/12.webp" alt="img">
-                    <img src="/gallery/photos/8.webp" alt="img">
-                    <img src="/gallery/photos/31.webp" alt="img">
-                    <img src="/gallery/photos/33.webp" alt="img">
-                </div>
-                <div aria-hidden class="group">
-                    <img src="/gallery/photos/1.webp" alt="img">
-                    <img src="/gallery/photos/3.webp" alt="img">
-                    <img src="/gallery/photos/30.webp" alt="img">
-                    <img src="/gallery/photos/5.webp" alt="img">
-                    <img src="/gallery/photos/7.webp" alt="img">
-                    <img src="/gallery/photos/11.webp" alt="img">
-                    <img src="/gallery/photos/12.webp" alt="img">
-                    <img src="/gallery/photos/8.webp" alt="img">
-                    <img src="/gallery/photos/31.webp" alt="img">
-                    <img src="/gallery/photos/33.webp" alt="img">
-                </div>
-            </div>
-            <a href="/gallery/index.html" class="more" id="more" target="_blank">more</a>
-        </div>
-        <div class="trdpage" id="trdpage">
-            <div class="struktur-kelas-wrapper">
-                <div class="struktur-container">
-                    
-                    <div class="struktur-title">
-                        <h1>Struktur Kelas</h1>
-                        <p>XI TJKT SAMSUNG • Angkatan 2024</p>
-                    </div>
-
-                    
-                    <div class="struktur-row">
-                        <div class="struktur-profile-card">
-                            <img src="assets/photos/1.png" alt="Wali Kelas" class="struktur-profile-image" loading="lazy">
-                            <div class="struktur-profile-label">Walas</div>
-                            <div class="struktur-profile-name">Rini Novriani, ST</div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="struktur-row">
-                        <div class="struktur-profile-card">
-                            <img src="assets/photos/2.png" alt="Ketua Kelas" class="struktur-profile-image" loading="lazy">
-                            <div class="struktur-profile-label">Ketua</div>
-                            <div class="struktur-profile-name">Malik</div>
-                        </div>
-                        <div class="struktur-profile-card">
-                            <img src="assets/photos/3.png" alt="Wakil Ketua" class="struktur-profile-image" loading="lazy">
-                            <div class="struktur-profile-label">Wakil</div>
-                            <div class="struktur-profile-name">Restu</div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="struktur-row">
-                        <div class="struktur-profile-card">
-                            <img src="assets/photos/4.png" alt="Sekretaris" class="struktur-profile-image" loading="lazy">
-                            <div class="struktur-profile-label">Sekre</div>
-                            <div class="struktur-profile-name">Kayla & Tamali</div>
-                        </div>
-                        <div class="struktur-profile-card">
-                            <img src="assets/photos/5.png" alt="Bendahara" class="struktur-profile-image" loading="lazy">
-                            <div class="struktur-profile-label">Bendahara</div>
-                            <div class="struktur-profile-name">Raffa & Syaira</div>
-                        </div>
-                        <div class="struktur-profile-card">
-                            <img src="assets/photos/6.png" alt="Keamanan" class="struktur-profile-image" loading="lazy">
-                            <div class="struktur-profile-label">Keamanan</div>
-                            <div class="struktur-profile-name">Naufal</div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="struktur-carousel-section">
-                        <h2 class="struktur-carousel-title">All of Us</h2>
-                        
-                        <div class="struktur-carousel-container">
-                            <div class="struktur-carousel-wrapper" id="strukturCarouselWrapper">
-                                <div class="struktur-carousel-track" id="strukturCarouselTrack">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fourthpage" id="fourthpage">
-            <div class="menfess">
-                <h1>Menfess<span> TJKT SAMSUNG </span></h1>
-                <div class="containMenfess">
-                    <div id="feedMenfess"></div>
-                </div>
-
-                <input type="text" class="inputMenfess" id="content" placeholder="Sampaikan isi hatimu disini!">
-                <img src="/icon/send.webp" class="sendMenfessicon" onclick="submitPost()">
-                <p>semua menfess akan bersifat anonym dan terjaga kerahasiaannya</p>
-            </div>
-        </div>
-    </main>
-
-    <footer id="footer">
-        <p>
-            <span>developed by <b>XI TJKT SAMSUNG</b></span><span>ANGKATAN 2024</span><span><a href="https://smkn2-pekanbaru.sch.id/en/">SMKN 2 PKU</a></span>
-        </p>
-        <ul>
-            <li><a href="https://www.instagram.com/xitjktonesti_" target="_blank"><img src="icon/instagram.webp" alt="xitjktonesti_"></a></li>
-            <li><a href="https://www.tiktok.com/@xisungone_" target="_blank"><img src="icon/tiktok.webp" alt="xsungone_"></a></li>
-            <li><a href="https://github.com/tjktsamsungskanda" target="_blank"><img src="icon/github.webp" alt="tjktsamsungskanda"></a></li>
-        </ul>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
 </body>
-
 </html>

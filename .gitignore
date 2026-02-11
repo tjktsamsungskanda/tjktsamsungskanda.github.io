@@ -1,3 +1,6 @@
 /icon/bckp/
 /testing
 *copy*
+*backup*
+*.env
+*.env.local
